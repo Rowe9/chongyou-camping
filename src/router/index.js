@@ -6,7 +6,6 @@ let router = createRouter({
     {
       path:'/',
       component:()=>import('@/views/home/index.vue'),
-      name:'home',
       redirect:'/home'
     },
     // 首页
@@ -26,7 +25,15 @@ let router = createRouter({
       meta: {
         title: '其他',
       },
-    }
+    },
+    // 找不到此页面
+    {
+      path: "/:pathMatch(.*)*", // 必备
+      meta:{
+        title:'找不到此页面'
+      },
+      component: () => import("@/views/error/404.vue"), 
+    },
   ]
 })
 
