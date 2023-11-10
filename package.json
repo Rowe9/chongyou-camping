@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "pinia": "^2.1.7",
+    "swiper": "^11.0.3",
     "vue": "^3.3.4",
+    "vue-awesome-swiper": "^5.0.1",
     "vue-router": "4"
   },
   "devDependencies": {
