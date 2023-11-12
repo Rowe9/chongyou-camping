@@ -8,11 +8,20 @@ let router = createRouter({
       component: () => import("@/views/home/index.vue"),
       redirect: "/home",
     },
+    // 注册
+    {
+      path: "/register",
+      name: "register",
+      component: () => import("@/views/register/index.vue"),
+      meta: {
+        title: "注册",
+      },
+    },
     // 登录
     {
       path: "/login",
       name: "login",
-      component: () => import("@/views/logIn/index.vue"),
+      component: () => import("@/views/login/index.vue"),
       meta: {
         title: "登录",
       },

@@ -8,20 +8,20 @@
       <div class="block text-center">
         <el-carousel height="600px">
           <el-carousel-item>
-            <img src="../../assets/homePic/蒙版组 1.png" alt="" />
+            <img src="../../assets/homePic/header0.png" alt="" />
           </el-carousel-item>
           <el-carousel-item>
             <img
-              src="../../assets/homePic/蒙版组 1.png"
+              src="../../assets/homePic/header1.png"
               alt=""
             /> </el-carousel-item
           ><el-carousel-item>
             <img
-              src="../../assets/homePic/蒙版组 1.png"
+              src="../../assets/homePic/header2.png"
               alt=""
             /> </el-carousel-item
           ><el-carousel-item>
-            <img src="../../assets/homePic/蒙版组 1.png" alt="" />
+            <img src="../../assets/homePic/header3.png" alt="" />
           </el-carousel-item>
         </el-carousel>
       </div>
@@ -37,19 +37,19 @@
       <!-- 轮播图 -->
       <el-carousel :interval="4000" type="card" height="400px" width="100px">
         <el-carousel-item>
-          <img src="../../assets/homePic/蒙版组 3(1).png" alt="" />
+          <img src="../../assets/homePic/header0.png" alt="" />
         </el-carousel-item>
         <el-carousel-item>
-          <img src="../../assets/homePic/蒙版组 3(2).png" alt="" />
+          <img src="../../assets/homePic/header1.png" alt="" />
         </el-carousel-item>
         <el-carousel-item>
-          <img src="../../assets/homePic/蒙版组 3(1).png" alt="" />
+          <img src="../../assets/homePic/header2.png" alt="" />
         </el-carousel-item>
         <el-carousel-item>
-          <img src="../../assets/homePic/蒙版组 3(2).png" alt="" />
+          <img src="../../assets/homePic/header3.png" alt="" />
         </el-carousel-item>
         <el-carousel-item>
-          <img src="../../assets/homePic/蒙版组 3(1).png" alt="" />
+          <img src="../../assets/homePic/header1.png" alt="" />
         </el-carousel-item>
       </el-carousel>
     </section>
@@ -117,7 +117,7 @@
 
       <div class="equipContainer">
         <div class="panel active panel1">
-          <img src="../../assets/homePic/装备购买4.png" alt="" />
+          <img src="../../assets/homePic/equipment4.png" alt="" />
           <div class="panelText">
             <div class="panelTextTitle">折叠椅便携露营轻质木纹户外折椅子</div>
             <div class="desc">月销量：286</div>
@@ -129,16 +129,16 @@
           </div>
         </div>
 
-        <div class="panel">
-          <img src="../../assets/homePic/装备购买1.png" alt="" />
+        <div class="panel" :class="{ active: isActive === true }">
+          <img src="../../assets/homePic/equipment2.png" alt="" />
         </div>
 
-        <div class="panel">
-          <img src="../../assets/homePic/装备购买2.png" alt="" />
+        <div class="panel" :class="{ active: isActive === true }">
+          <img src="../../assets/homePic/equipment1.png" alt="" />
         </div>
 
-        <div class="panel">
-          <img src="../../assets/homePic/装备购买3.png" alt="" />
+        <div class="panel" :class="{ active: isActive === true }">
+          <img src="../../assets/homePic/equipment3.png" alt="" />
         </div>
       </div>
     </section>
@@ -154,6 +154,7 @@
 
 <script setup>
 import myFooter from "../../components/footer/myFooter.vue";
+import { ref } from "vue";
 
 // const panels = document.querySelectorAll(".panel");
 
